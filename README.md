@@ -55,21 +55,7 @@ This project is optimized for **GitHub Pages**.
 
 ---
 
-## 📂 Project Structure
 
-my-portfolio/
-│
-├── index.html                # The main HTML file (Your full code)
-├── style.css                 # The CSS file (Your design code)
-├── script.js                 # The JavaScript file (Your logic code)
-├── README.md                 # The documentation file (I just gave you)
-│
-├── deepak-ai.png             # Screenshot of your live website (for Project section)
-├── deepak-yadav-resume.pdf   # Your Resume file (Rename it to match your HTML link)
-│
-└── .git/                     # (Hidden folder created automatically when you run git init)
-
----
 
 ## 📬 Contact Protocol
 
