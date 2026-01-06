@@ -6,7 +6,7 @@
 > **"Architecting the future with code. Specialized in Deep Learning models, Computer Vision, and scalable Web Architectures."**
 
 ![Portfolio Preview](deepak-ai.png)
-*(Note: Replace the image above with a screenshot of your portfolio home page)*
+
 
 ## 🌐 About The Project
 
@@ -48,7 +48,7 @@ This project is optimized for **GitHub Pages**.
 
 1.  Clone the repo:
     ```bash
-    git clone [https://github.com/D0027/YOUR_REPO_NAME.git](https://github.com/D0027/YOUR_REPO_NAME.git)
+    git clone [https://d0027.github.io/my-portfolio](https://github.com/D0027/my-portfolio.git)
     ```
 2.  Open `index.html` in your browser to test locally.
 3.  Push to GitHub and enable **GitHub Pages** in Settings.
@@ -57,7 +57,17 @@ This project is optimized for **GitHub Pages**.
 
 ## 📂 Project Structure
 
-├── index.html # Main HTML structure ├── style.css # Custom CSS (Glassmorphism, Animations) ├── script.js # Logic for Scroll & Formspree ├── deepak.png # Profile Image ├── deepak-ai.png # Project Screenshot ├── resume.pdf # Downloadable CV └── README.md # Documentation
+my-portfolio/
+│
+├── index.html                # The main HTML file (Your full code)
+├── style.css                 # The CSS file (Your design code)
+├── script.js                 # The JavaScript file (Your logic code)
+├── README.md                 # The documentation file (I just gave you)
+│
+├── deepak-ai.png             # Screenshot of your live website (for Project section)
+├── deepak-yadav-resume.pdf   # Your Resume file (Rename it to match your HTML link)
+│
+└── .git/                     # (Hidden folder created automatically when you run git init)
 
 ---
 
