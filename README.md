@@ -5,7 +5,8 @@
 
 > **"Architecting the future with code. Specialized in Deep Learning models, Computer Vision, and scalable Web Architectures."**
 
-![Portfolio Preview](deepak-ai.png)
+![Portfolio Preview](<img width="2816" height="1536" alt="deepak" src="https://github.com/user-attachments/assets/40ff5c29-0765-4e8d-87e1-2998a270dc2e" />
+)
 
 
 ## 🌐 About The Project
