@@ -1,6 +1,6 @@
 # 🧠 Deepak.Neural() | AI Engineer Portfolio
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://D0027.github.io/YOUR_REPO_NAME/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://d0027.github.io/my-portfolio/)
 [![Portfolio Status](https://img.shields.io/badge/Status-System%20Online-blue?style=for-the-badge)](https://github.com/D0027)
 
 > **"Architecting the future with code. Specialized in Deep Learning models, Computer Vision, and scalable Web Architectures."**
