@@ -3,652 +3,903 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak | AI Engineer</title>
-    
+    <title>Deepak Yadav | AI & ML Engineer — Deep Learning, NLP, Computer Vision</title>
+    <meta name="description" content="Deepak Yadav is an AI & ML Engineer specializing in Deep Learning, Computer Vision, and NLP. Building intelligent systems with Python, TensorFlow, and PyTorch. Available for projects.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Deep Learning, Python, TensorFlow, PyTorch, NLP, Computer Vision, Django, Gradio, Streamlit, Surat, Gujarat">
+    <meta name="author" content="Deepak Yadav">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://deepakyadav.dev/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deepakyadav.dev/">
+    <meta property="og:title" content="Deepak Yadav | AI & ML Engineer">
+    <meta property="og:description" content="Architecting intelligent systems with Deep Learning, NLP, and Computer Vision. Available for projects.">
+    <meta property="og:image" content="https://deepakyadav.dev/deepak-ai.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deepak Yadav | AI & ML Engineer">
+    <meta name="twitter:description" content="Architecting intelligent systems with Deep Learning, NLP, and Computer Vision.">
+    <meta name="twitter:image" content="https://deepakyadav.dev/deepak-ai.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deepak Yadav",
+      "jobTitle": "AI & ML Engineer",
+      "url": "https://deepakyadav.dev",
+      "email": "dy0169489@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bharuch",
+        "addressRegion": "Gujarat",
+        "addressCountry": "IN"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "P P Savani University" },
+        { "@type": "CollegeOrUniversity", "name": "Saurashtra University" }
+      ],
+      "knowsAbout": ["Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Python", "TensorFlow"],
+      "sameAs": [
+        "https://github.com/D0027",
+        "https://www.linkedin.com/in/deepakyadav027/",
+        "http://deepakai.pythonanywhere.com/"
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        :focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container">
-            <a class="navbar-brand logo-wrapper" href="#">
-                <span class="code-text">Deepak<span class="method">.Neural</span><span class="brackets">()</span></span>
-                <span class="logo-tooltip">System Online</span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="toggler-icon"><i class="fa-solid fa-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav gap-4">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#expertise">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#qualification">Qualification</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                </ul>
-            </div>
-
-            <a href="#contact" class="btn-liquid d-none d-lg-block">
-                <span>Chat</span>
-                <div class="liquid"></div>
-            </a>
+<!-- ═══ PAGE LOADER ═══════════════════════════════════════════════════════ -->
+<div id="page-loader" aria-hidden="true">
+    <div class="loader-content">
+        <div class="loader-logo">
+            <span class="l-bracket">[</span>
+            <span class="l-name">D.Neural</span>
+            <span class="l-bracket">]</span>
         </div>
-    </nav>
-
-    <section id="home" class="hero-section">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                
-                <div class="col-lg-6 hero-content">
-                    <div class="badge-wrapper mb-3">
-                        <span class="badge-tech">
-                            <span class="dot-online"></span> Available for Projects
-                        </span>
-                    </div>
-
-                    <h1 class="hero-title">
-                        Hello! I Am <br>
-                        <span class="highlight-name">Deepak Yadav</span>
-                    </h1>
-
-                    <h3 class="hero-subtitle">
-                        Architecting <span class="txt-type" data-wait="3000" data-words='["Intelligence", "Neural Networks", "Future Tech"]'></span>
-                    </h3>
-
-                    <p class="hero-desc">
-                        I bridge the gap between complex data and human experience, 
-                        building adaptive AI systems that learn, evolve, and solve real-world problems.
-                    </p>
-
-                    <div class="btn-group-hero">
-                        <a href="#contact" class="btn-hire">
-                            <span>Hire Me</span>
-                            <div class="wave"></div>
-                        </a>
-                        <a href="#projects" class="btn-work">
-                            View Work <i class="fa-solid fa-arrow-trend-up"></i>
-                        </a>
-                    </div>
-
-                    <div class="tech-stack mt-5">
-                        <span>Stack:</span>
-                        <div class="icons">
-                            <i class="fa-brands fa-python" title="Python"></i>
-                            <i class="fa-solid fa-brain" title="TensorFlow"></i>
-                            <i class="fa-solid fa-database" title="SQL"></i>
-                            <i class="fa-brands fa-docker" title="Docker"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 hero-img-wrapper">
-                    <div class="ai-visual-wrapper">
-                        <div class="ai-sphere">
-                            <div class="ring ring-1"></div>
-                            <div class="ring ring-2"></div>
-                            <div class="ring ring-3"></div>
-                            <div class="core-glow"></div>
-                        </div>
-
-                        <div class="float-card card-ai">
-                            <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
-                            <div>
-                                <h5>Model Trained</h5>
-                                <small>99.9% Accuracy</small>
-                            </div>
-                        </div>
-
-                        <div class="float-card card-code">
-                            <div class="icon-box purple"><i class="fa-solid fa-code-branch"></i></div>
-                            <div>
-                                <h5>Neural Net</h5>
-                                <small>Optimized</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="loader-bar-track">
+            <div class="loader-bar-fill"></div>
         </div>
-    </section>
-
-    <section id="expertise" class="section-padding">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <span class="badge-title">My Expertise</span>
-                <h2 class="section-title">
-                    Engineering <span class="text-gradient">Intelligent Solutions</span>
-                </h2>
-                <p class="section-desc">
-                    I leverage cutting-edge algorithms to transform raw data into 
-                    actionable insights and autonomous systems.
-                </p>
-            </div>
-
-            <div class="row g-4 mt-2">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-brain"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p>Building predictive models and neural networks that learn from data to automate complex decision-making processes.</p>
-                        <a href="#contact" class="link-learn">
-                            Deploy Model <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card active-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Deep Learning</h3>
-                        <p>Architecting multi-layered CNNs and RNNs for advanced image recognition, NLP, and pattern detection.</p>
-                        <a href="#contact" class="link-learn">
-                            Start Architecture <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card">
-                        <div class="icon-wrapper">
-                            <i class="fa-solid fa-database"></i>
-                            <div class="icon-bg"></div>
-                        </div>
-                        <h3>Big Data Ops</h3>
-                        <p>Optimizing data pipelines and storage solutions to handle massive datasets with speed and efficiency.</p>
-                        <a href="#contact" class="link-learn">
-                            Optimize Data <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section-padding">
-        <div class="container">
-            <div class="row align-items-center">
-                
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="row g-4">
-                        
-                        <div class="col-6">
-                            <div class="skill-card">
-                                <div class="circle-box">
-                                    <svg class="progress-ring" width="120" height="120">
-                                        <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                                        <circle class="progress-ring__bar" stroke="#3b82f6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" style="stroke-dashoffset: 16.35; stroke-dasharray: 327;"/>
-                                    </svg>
-                                    <div class="skill-icon">
-                                        <i class="fa-brands fa-python"></i>
-                                    </div>
-                                </div>
-                                <h4>Python</h4>
-                                <span class="counter">75</span>%
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="skill-card">
-                                <div class="circle-box">
-                                    <svg class="progress-ring" width="120" height="120">
-                                        <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                                        <circle class="progress-ring__bar" stroke="#8b5cf6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" style="stroke-dashoffset: 32.7; stroke-dasharray: 327;"/>
-                                    </svg>
-                                    <div class="skill-icon">
-                                        <i class="fa-solid fa-brain"></i>
-                                    </div>
-                                </div>
-                                <h4>TensorFlow</h4>
-                                <span class="counter">70</span>%
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="skill-card">
-                                <div class="circle-box">
-                                    <svg class="progress-ring" width="120" height="120">
-                                        <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                                        <circle class="progress-ring__bar" stroke="#ec4899" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" style="stroke-dashoffset: 49.05; stroke-dasharray: 327;"/>
-                                    </svg>
-                                    <div class="skill-icon">
-                                        <i class="fa-solid fa-comments"></i>
-                                    </div>
-                                </div>
-                                <h4>NLP</h4>
-                                <span class="counter">65</span>%
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="skill-card">
-                                <div class="circle-box">
-                                    <svg class="progress-ring" width="120" height="120">
-                                        <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
-                                        <circle class="progress-ring__bar" stroke="#10b981" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" style="stroke-dashoffset: 65.4; stroke-dasharray: 327;"/>
-                                    </svg>
-                                    <div class="skill-icon">
-                                        <i class="fa-solid fa-chart-pie"></i>
-                                    </div>
-                                </div>
-                                <h4>Data Viz</h4>
-                                <span class="counter">50</span>%
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6 ps-lg-5">
-                    <div class="about-content">
-                        <span class="badge-title">My Capabilities</span>
-                        <h2 class="section-title mt-2">
-                            Forging <span class="text-gradient">Intelligent Systems</span> with Code
-                        </h2>
-                        <p class="section-desc">
-                            I don't just write code; I train models to think. My expertise spans the full data science lifecycle, from data wrangling and feature engineering to deploying scalable AI architectures on the cloud.
-                        </p>
-                        <p class="section-desc">
-                            Whether it's Natural Language Processing (NLP) or Computer Vision, I build systems that learn, adapt, and drive business value.
-                        </p>
-                        
-                        <div class="mt-4">
-                           <a href="Deepak Yadav resume 5.pdf" download class="btn-download">
-
-                                <i class="fa-solid fa-file-arrow-down"></i>
-                                <span>Download CV</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <section id="qualification" class="section-padding bg-light-alt">
-        <div class="container">
-            
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <span class="badge-title">My Journey</span>
-                <h2 class="section-title">
-                    Academic <span class="text-gradient">Milestones</span>
-                </h2>
-                <p class="section-desc">
-                    My educational background has laid the foundation for my expertise in 
-                    Computer Applications and AI systems.
-                </p>
-            </div>
-
-            <div class="timeline-wrapper">
-                
-                <div class="timeline-item left" data-aos="fade-right">
-                    
-                    <div class="timeline-content">
-                        <div class="date-badge">2024 - 2026</div>
-                        <h3 class="degree">Master of Computer Application</h3>
-                        <h4 class="university">P P Savani University</h4>
-                        <p class="location"><i class="fa-solid fa-location-dot"></i> Surat, Gujarat, India</p>
-                        <div class="coursework">
-                            <span>RDBMS</span>
-                            <span>AI & ML</span>
-                            <span>Java</span>
-                            <span>Mobile Dev</span>
-                        </div>
-                    </div>
-
-                    <div class="timeline-decoration right-deco" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="deco-icon-box">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-                        <div class="deco-dots"></div>
-                    </div>
-
-                </div>
-
-                <div class="timeline-item right" data-aos="fade-left">
-                    
-                    <div class="timeline-content">
-                        <div class="date-badge">2022 - 2024</div>
-                        <h3 class="degree">Bachelor of Computer Application</h3>
-                        <h4 class="university">Saurashtra University</h4>
-                        <p class="location"><i class="fa-solid fa-location-dot"></i> Rajkot, Gujarat, India</p>
-                        <div class="coursework">
-                            <span>Data Structures</span>
-                            <span>Adv. Java</span>
-                            <span>C++</span>
-                            <span>Web Tech</span>
-                        </div>
-                    </div>
-
-                    <div class="timeline-decoration left-deco" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="deco-icon-box code-style">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <div class="deco-dots"></div>
-                    </div>
-
-                </div>
-
-                <div class="timeline-line"></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projects" class="section-padding">
-        <div class="container">
-            
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <span class="badge-title">Portfolio</span>
-                <h2 class="section-title">
-                    Deploying <span class="text-gradient">Future Tech</span>
-                </h2>
-                <p class="section-desc">
-                    A showcase of my high-performance AI models and full-stack web applications.
-                </p>
-            </div>
-
-            <div class="filter-wrapper text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-                <button class="btn-filter active" data-filter="all">All Systems</button>
-                <button class="btn-filter" data-filter="ai">AI / ML</button>
-                <button class="btn-filter" data-filter="web">Web Dev</button>
-            </div>
-
-            <div class="project-showcase ai web mb-5" data-aos="zoom-in" data-aos-delay="200">
-                <div class="row g-0 align-items-center">
-                    
-                    <div class="col-lg-5 p-4 p-lg-5">
-                        <div class="live-badge">
-                            <span class="dot-pulse"></span> Live Production
-                        </div>
-                        <h3 class="project-title">Deepak AI</h3>
-                        <p class="project-desc">
-                            An advanced AI-powered platform hosted on PythonAnywhere. Features integrated machine learning models for real-time data processing and intelligent automation.
-                        </p>
-                        
-                        <div class="tech-tags">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Bootstrap</span>
-                        </div>
-
-                        <div class="action-btns mt-4">
-                            <a href="http://deepakai.pythonanywhere.com/" target="_blank" class="btn-launch">
-                                Launch App <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                            <a href="#" class="btn-git">
-                                <i class="fa-brands fa-github"></i> Source
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="browser-mockup">
-                            <div class="browser-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                                <div class="url-bar">deepakai.pythonanywhere.com</div>
-                            </div>
-                            <div class="img-container">
-                                <img src="deepak-ai.png" alt="Deepak AI Project" class="project-img">
-                                <div class="overlay-gradient"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row g-4">
-                
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="std-project-card">
-                        <div class="card-top">
-                            <i class="fa-solid fa-chart-line icon-logo"></i>
-                            <div class="card-actions">
-                                <a href="#"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h4>Stock Price Predictor</h4>
-                        <p>LSTM Neural Network model to forecast stock market trends with historical data visualization.</p>
-                        <div class="mini-tags">
-                            <span>Python</span>
-                            <span>Keras</span>
-                            <span>Pandas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="std-project-card">
-                        <div class="card-top">
-                            <i class="fa-solid fa-eye icon-logo"></i>
-                            <div class="card-actions">
-                                <a href="#"><i class="fa-brands fa-github"></i></a>
-                            </div>
-                        </div>
-                        <h4>Face Mask Detection</h4>
-                        <p>Real-time computer vision system using OpenCV to detect face mask compliance in video feeds.</p>
-                        <div class="mini-tags">
-                            <span>OpenCV</span>
-                            <span>PyTorch</span>
-                            <span>CNN</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="section-padding bg-grid">
-        <div class="container">
-            
-            <div class="section-header text-center mb-5" data-aos="fade-up">
-                <span class="badge-title">Get in Touch</span>
-                <h2 class="section-title">
-                    Initialize <span class="text-gradient">Connection</span>
-                </h2>
-                <p class="section-desc">
-                    Have a project in mind or want to discuss the latest in AI? 
-                    Send a signal, and I'll respond within 24 hours.
-                </p>
-            </div>
-
-            <div class="row g-5">
-                
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="contact-info-wrapper">
-                        
-                        <div class="contact-card">
-                            <div class="icon-box">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h5>Email Interface</h5>
-                                <a href="mailto:dy0169489@gmail.com" class="contact-link">dy0169489@gmail.com</a>
-                                <span class="status-dot online"></span> <small>Online Now</small>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="icon-box purple">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h5>Base of Operations</h5>
-                                <p>Bharuch, Gujarat, India</p>
-
-                            </div>
-                        </div>
-
-                        <div class="contact-card social-card">
-                            <h5>Network Nodes</h5>
-                            <div class="social-links">
-                                <a href="https://www.linkedin.com/in/deepakyadav027/" target="_blank" class="social-btn">
-    <i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-<a href="https://github.com/D0027" target="_blank" class="social-btn">
-    <i class="fa-brands fa-github"></i>
-</a>
-
-<a href="https://dy0169489.wixsite.com/deepak-yadav" target="_blank" class="social-btn">
-    <i class="fa-solid fa-globe"></i>
-</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-7" data-aos="fade-left">
-    <div class="form-container">
-        
-        <form 
-            id="my-form"
-            action="https://formspree.io/f/xpqwbgjy"
-            method="POST"
-            class="contact-form"
-        >
-            
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <input type="text" name="name" id="name" required placeholder=" ">
-                        <label for="name">Your Name</label>
-                        <div class="line"></div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <input type="email" name="email" id="email" required placeholder=" ">
-                        <label for="email">Your Email</label>
-                        <div class="line"></div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="input-group">
-                        <input type="text" name="subject" id="subject" required placeholder=" ">
-                        <label for="subject">Subject Protocol</label>
-                        <div class="line"></div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="input-group">
-                        <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
-                        <label for="message">Transmission Data (Message)</label>
-                        <div class="line"></div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <button 
-                        type="submit" 
-                        class="btn-submit"
-                        id="my-form-button"
-                    >
-                        <span>Transmit Message</span>
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                </div>
-
-                <div class="col-12">
-                    <p id="my-form-status" class="text-center mt-3 fw-bold"></p>
-                </div>
-            </div>
-
-        </form>
+        <div class="loader-text">Initializing Systems...</div>
     </div>
 </div>
 
-</div>
-</div>
-</section>
+<!-- ═══ CURSOR ═══════════════════════════════════════════════════════════ -->
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+<!-- Particle trail canvas is created dynamically by script.js — no static element needed -->
 
-<footer class="footer-section">
-        <div class="container">
-            <div class="row g-5">
-                
-                <div class="col-lg-4" data-aos="fade-right">
-                    <a class="footer-brand" href="#">
-                        Deepak<span class="highlight">.Neural</span><span class="brackets">()</span>
+<!-- ═══ NEURAL BG CANVAS ═════════════════════════════════════════════════ -->
+<canvas id="neural-bg" aria-hidden="true"></canvas>
+
+<!-- ═══ AURORA ORBS ═══════════════════════════════════════════════════════ -->
+<div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+</div>
+
+<!-- ═══ NOISE TEXTURE ════════════════════════════════════════════════════ -->
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ═══ SCROLL PROGRESS ══════════════════════════════════════════════════ -->
+<div id="scroll-progress" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+        <a class="navbar-brand logo-wrapper" href="#home" aria-label="Deepak Yadav — Back to top">
+            <span class="code-text">Deepak<span class="method">.Neural</span><span class="brackets">()</span></span>
+            <span class="logo-tooltip" aria-hidden="true">System Online ✓</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav gap-4">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#expertise">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#qualification">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <a href="#contact" class="btn-liquid d-none d-lg-block" aria-label="Contact Deepak">
+            <span>Chat</span>
+            <div class="liquid" aria-hidden="true"></div>
+        </a>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════════════════ -->
+<section id="home" class="hero-section" aria-label="Introduction">
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Floating data particles -->
+    <div class="hero-data-particles" aria-hidden="true">
+        <span class="dp" style="--x:12%;--y:25%;--d:0s">0.9742</span>
+        <span class="dp" style="--x:80%;--y:15%;--d:1.2s">∑ loss</span>
+        <span class="dp" style="--x:88%;--y:60%;--d:0.5s">∇ grad</span>
+        <span class="dp" style="--x:5%;--y:70%;--d:2s">epoch 42</span>
+        <span class="dp" style="--x:60%;--y:85%;--d:0.8s">relu(x)</span>
+        <span class="dp" style="--x:40%;--y:8%;--d:1.8s">softmax</span>
+        <span class="dp" style="--x:25%;--y:88%;--d:3s">0.9821</span>
+        <span class="dp" style="--x:72%;--y:40%;--d:1.5s">W·x+b</span>
+    </div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+
+            <!-- ── Left: Text ── -->
+            <div class="col-lg-6 hero-content">
+
+                <div class="badge-wrapper mb-3" data-hero-el>
+                    <span class="badge-tech">
+                        <span class="dot-online" aria-hidden="true"></span>
+                        Available for Projects
+                    </span>
+                </div>
+
+                <h1 class="hero-title" data-hero-el>
+                    Hello! I Am <br>
+                    <span class="highlight-name">Deepak Yadav</span>
+                </h1>
+
+                <h2 class="hero-subtitle" data-hero-el>
+                    Architecting
+                    <span class="txt-type"
+                          data-wait="3000"
+                          data-words='["Intelligence", "Neural Networks", "Future Tech"]'>
+                    </span>
+                </h2>
+                <noscript><h2 class="hero-subtitle">Architecting Intelligence</h2></noscript>
+
+                <p class="hero-desc" data-hero-el>
+                    I bridge the gap between complex data and human experience,
+                    building adaptive AI systems that learn, evolve, and solve real-world problems.
+                </p>
+
+                <div class="btn-group-hero" data-hero-el>
+                    <a href="#contact" class="btn-hire">
+                        <span>Hire Me</span>
+                        <div class="wave" aria-hidden="true"></div>
                     </a>
-                    <p class="footer-desc mt-3">
-                        Architecting the future with code. Specialized in Deep Learning models, 
-                        Computer Vision, and scalable Web Architectures.
-                    </p>
-                    <div class="status-indicator">
-                        <span class="status-dot pulse-green"></span>
-                        <span>System Status: <span class="text-green">Online</span></span>
+                    <a href="#projects" class="btn-work">
+                        View Work <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack mt-5" aria-label="Technology stack" data-hero-el>
+                    <span>Stack:</span>
+                    <div class="icons">
+                        <i class="fa-brands fa-python"   title="Python"               aria-label="Python"></i>
+                        <i class="fa-solid fa-brain"     title="TensorFlow / PyTorch"  aria-label="TensorFlow and PyTorch"></i>
+                        <i class="fa-solid fa-database"  title="SQL & Big Data"        aria-label="SQL and Big Data"></i>
+                        <i class="fa-brands fa-docker"   title="Docker"                aria-label="Docker"></i>
                     </div>
                 </div>
-
-                <div class="col-lg-3 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
-                    <h5 class="footer-heading">Navigation</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-                        <li><a href="#skills"><i class="fa-solid fa-angle-right"></i> About</a></li>
-                        <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
-                        <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200">
-                    <h5 class="footer-heading">Connect Protocol</h5>
-                    <div class="social-wrapper">
-                        
-                        <a href="https://www.linkedin.com/in/deepakyadav027" target="_blank" class="social-card linkedin">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <span>LinkedIn</span>
-                        </a>
-
-                        <a href="https://github.com/D0027" target="_blank" class="social-card github">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-
-                        <a href="http://deepakai.pythonanywhere.com/" target="_blank" class="social-card website">
-                            <i class="fa-solid fa-globe"></i>
-                            <span>Live AI Project</span>
-                        </a>
-
-                    </div>
-                </div>
-
             </div>
 
-            <div class="footer-bottom text-center">
-                <div class="line-divider"></div>
-                <p>&copy; 2026 Deepak Yadav. Engineered with <i class="fa-solid fa-heart text-danger"></i> & Intelligence.</p>
+            <!-- ── Right: AI Sphere ── -->
+            <div class="col-lg-6 hero-img-wrapper" aria-hidden="true">
+                <div class="ai-visual-wrapper">
+                    <div class="ai-sphere">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
+                        <div class="ring ring-4"></div>
+                        <div class="ring ring-5"></div>
+                        <div class="core-glow"></div>
+                        <div class="core-inner"></div>
+                        <div class="orbit-particles">
+                            <span class="particle p1"></span>
+                            <span class="particle p2"></span>
+                            <span class="particle p3"></span>
+                            <span class="particle p4"></span>
+                            <span class="particle p5"></span>
+                            <span class="particle p6"></span>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-ai">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Model Trained</h3>
+                            <small>99.9% Accuracy</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-code">
+                        <div class="icon-box purple">
+                            <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Neural Net</h3>
+                            <small>Optimized</small>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-data">
+                        <div class="icon-box green">
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <h3>Data Pipeline</h3>
+                            <small>Active</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     EXPERTISE / SERVICES
+════════════════════════════════════════════════════════════════════════ -->
+<section id="expertise" class="section-padding" aria-labelledby="expertise-heading">
+    <div class="container">
+
+        <div class="section-header text-center mb-5 reveal-block">
+            <span class="badge-title">My Expertise</span>
+            <h2 class="section-title" id="expertise-heading">
+                Engineering <span class="text-gradient">Intelligent Solutions</span>
+            </h2>
+            <p class="section-desc">
+                I leverage cutting-edge algorithms to transform raw data into
+                actionable insights and autonomous systems.
+            </p>
+        </div>
+
+        <div class="row g-4 mt-2">
+
+            <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.1s">
+                <div class="service-card tilt-card">
+                    <div class="card-glow-border" aria-hidden="true"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Building predictive models and neural networks that learn from data to automate complex decision-making processes.</p>
+                    <a href="#projects" class="link-learn">
+                        Deploy Model <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.22s">
+                <div class="service-card active-card tilt-card">
+                    <div class="card-glow-border active-glow" aria-hidden="true"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <p>Architecting multi-layered CNNs and RNNs for advanced image recognition, NLP, and pattern detection.</p>
+                    <a href="#projects" class="link-learn">
+                        Start Architecture <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.34s">
+                <div class="service-card tilt-card">
+                    <div class="card-glow-border" aria-hidden="true"></div>
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-database" aria-hidden="true"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Big Data Ops</h3>
+                    <p>Optimizing data pipelines and storage solutions to handle massive datasets with speed and efficiency.</p>
+                    <a href="#projects" class="link-learn">
+                        Optimize Data <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SKILLS / ABOUT
+════════════════════════════════════════════════════════════════════════ -->
+<section id="skills" class="section-padding" aria-labelledby="skills-heading">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 mb-5 mb-lg-0 reveal-block">
+                <div class="row g-4">
+
+                    <div class="col-6">
+                        <div class="skill-card tilt-card">
+                            <div class="circle-box">
+                                <svg class="progress-ring" width="120" height="120" aria-hidden="true">
+                                    <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                    <circle class="progress-ring__bar" stroke="#3b82f6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="75"/>
+                                </svg>
+                                <div class="skill-icon"><i class="fa-brands fa-python" aria-hidden="true"></i></div>
+                            </div>
+                            <h4>Python</h4>
+                            <p><span class="counter" data-target="75">0</span>%</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="skill-card tilt-card">
+                            <div class="circle-box">
+                                <svg class="progress-ring" width="120" height="120" aria-hidden="true">
+                                    <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                    <circle class="progress-ring__bar" stroke="#8b5cf6" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="70"/>
+                                </svg>
+                                <div class="skill-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+                            </div>
+                            <h4>TensorFlow</h4>
+                            <p><span class="counter" data-target="70">0</span>%</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="skill-card tilt-card">
+                            <div class="circle-box">
+                                <svg class="progress-ring" width="120" height="120" aria-hidden="true">
+                                    <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                    <circle class="progress-ring__bar" stroke="#ec4899" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="65"/>
+                                </svg>
+                                <div class="skill-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+                            </div>
+                            <h4>NLP</h4>
+                            <p><span class="counter" data-target="65">0</span>%</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="skill-card tilt-card">
+                            <div class="circle-box">
+                                <svg class="progress-ring" width="120" height="120" aria-hidden="true">
+                                    <circle class="progress-ring__circle" stroke="#e2e8f0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                    <circle class="progress-ring__bar" stroke="#10b981" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" data-percent="60"/>
+                                </svg>
+                                <div class="skill-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+                            </div>
+                            <h4>Data Viz</h4>
+                            <p><span class="counter" data-target="60">0</span>%</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 ps-lg-5 reveal-block" style="--rd:0.15s">
+                <div class="about-content">
+                    <span class="badge-title">My Capabilities</span>
+                    <h2 class="section-title mt-2" id="skills-heading">
+                        Forging <span class="text-gradient">Intelligent Systems</span> with Code
+                    </h2>
+                    <p class="section-desc">
+                        I don't just write code; I train models to think. My expertise spans the full
+                        data science lifecycle — from data wrangling and feature engineering to
+                        deploying scalable AI architectures on the cloud.
+                    </p>
+                    <p class="section-desc mt-3">
+                        Whether it's Natural Language Processing or Computer Vision, I build systems
+                        that learn, adapt, and drive business value.
+                    </p>
+
+                    <div class="skill-bars mt-4">
+                        <div class="skill-bar-item">
+                            <div class="bar-label-row">
+                                <span>PyTorch / TensorFlow</span>
+                                <span class="bar-pct">72%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" data-width="72"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="bar-label-row">
+                                <span>Computer Vision (OpenCV)</span>
+                                <span class="bar-pct">68%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" data-width="68"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="bar-label-row">
+                                <span>Django / Streamlit / Gradio</span>
+                                <span class="bar-pct">80%</span>
+                            </div>
+                            <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="deepak-yadav-resume.pdf" download class="btn-download" aria-label="Download Deepak's CV">
+                            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     EDUCATION TIMELINE
+════════════════════════════════════════════════════════════════════════ -->
+<section id="qualification" class="section-padding bg-light-alt" aria-labelledby="qual-heading">
+    <div class="container">
+
+        <div class="section-header text-center mb-5 reveal-block">
+            <span class="badge-title">My Journey</span>
+            <h2 class="section-title" id="qual-heading">
+                Academic <span class="text-gradient">Milestones</span>
+            </h2>
+            <p class="section-desc">
+                My educational foundation powering expertise in Computer Applications and AI systems.
+            </p>
+        </div>
+
+        <div class="timeline-wrapper">
+
+            <div class="timeline-item left reveal-block">
+                <div class="timeline-content">
+                    <div class="date-badge">2024 — 2026</div>
+                    <h3 class="degree">Master of Computer Application</h3>
+                    <h4 class="university">P P Savani University</h4>
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        Surat, Gujarat, India
+                    </p>
+                    <div class="coursework" aria-label="Courses">
+                        <span>RDBMS</span>
+                        <span>AI & ML</span>
+                        <span>Java</span>
+                        <span>Mobile Dev</span>
+                    </div>
+                </div>
+                <div class="timeline-decoration right-deco" aria-hidden="true">
+                    <div class="deco-icon-box"><i class="fa-solid fa-brain"></i></div>
+                    <div class="deco-dots"></div>
+                </div>
+            </div>
+
+            <div class="timeline-item right reveal-block" style="--rd:0.2s">
+                <div class="timeline-content">
+                    <div class="date-badge">2022 — 2024</div>
+                    <h3 class="degree">Bachelor of Computer Application</h3>
+                    <h4 class="university">Saurashtra University</h4>
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        Rajkot, Gujarat, India
+                    </p>
+                    <div class="coursework" aria-label="Courses">
+                        <span>Data Structures</span>
+                        <span>Adv. Java</span>
+                        <span>C++</span>
+                        <span>Web Tech</span>
+                    </div>
+                </div>
+                <div class="timeline-decoration left-deco" aria-hidden="true">
+                    <div class="deco-icon-box code-style"><i class="fa-solid fa-code"></i></div>
+                    <div class="deco-dots"></div>
+                </div>
+            </div>
+
+            <div class="timeline-line" aria-hidden="true"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════════════════════════════════ -->
+<section id="projects" class="section-padding" aria-labelledby="projects-heading">
+    <div class="container">
+
+        <div class="section-header text-center mb-5 reveal-block">
+            <span class="badge-title">Portfolio</span>
+            <h2 class="section-title" id="projects-heading">
+                Deploying <span class="text-gradient">Future Tech</span>
+            </h2>
+            <p class="section-desc">
+                A showcase of high-performance AI models and full-stack web applications.
+            </p>
+        </div>
+
+        <div class="filter-wrapper text-center mb-5 reveal-block"
+             role="group" aria-label="Filter projects">
+            <button class="btn-filter active" data-filter="all">All Systems</button>
+            <button class="btn-filter" data-filter="ai">AI / ML</button>
+        </div>
+
+        <!-- PROJECT 1 -->
+        <div class="project-showcase ai web mb-5 reveal-block">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-5 p-4 p-lg-5">
+                    <div class="live-badge">
+                        <span class="dot-pulse" aria-hidden="true"></span> Live on PythonAnywhere
+                    </div>
+                    <h3 class="project-title">Neural Arena</h3>
+                    <p class="project-desc">
+                        An advanced AI-powered platform hosted on PythonAnywhere. Features integrated
+                        machine learning models for real-time data processing, intelligent automation,
+                        and the Neural Arena simulation hub.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="action-btns mt-4">
+                        <a href="http://deepakai.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+                            Launch App <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/D0027/AI_Game_Website" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Neural Arena source code on GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Source
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="browser-mockup">
+                        <div class="browser-header" aria-hidden="true">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <div class="url-bar">deepakai.pythonanywhere.com</div>
+                        </div>
+                        <div class="img-container">
+                            <img src="deepak-ai.png"
+                                 alt="Neural Arena platform — AI game website with machine learning models built using Django and TensorFlow"
+                                 class="project-img" loading="lazy">
+                            <div class="overlay-gradient" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <a href="#" id="scroll-top" class="scroll-top-btn">
-            <i class="fa-solid fa-arrow-up"></i>
-        </a>
-    </footer>
+        <!-- PROJECT 2 -->
+        <div class="project-showcase ai mb-5 reveal-block" style="--rd:0.1s">
+            <div class="row g-0 align-items-center flex-lg-row-reverse">
+                <div class="col-lg-5 p-4 p-lg-5">
+                    <div class="live-badge">
+                        <span class="dot-pulse" aria-hidden="true"></span> Live on Hugging Face
+                    </div>
+                    <h3 class="project-title">Plant Disease Classifier</h3>
+                    <p class="project-desc">
+                        An intelligent agro-vision diagnostic dashboard. Utilizes Vision Transformers
+                        to analyze leaf images and detect diseases with high confidence —
+                        helping farmers prevent crop loss.
+                    </p>
+                    <div class="tech-tags">
+                        <span>PyTorch</span>
+                        <span>Gradio</span>
+                        <span>OpenCV</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="action-btns mt-4">
+                        <a href="https://huggingface.co/spaces/deepak0027/plant-disease-classifier" target="_blank" rel="noopener noreferrer" class="btn-launch">
+                            Launch App <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/D0027/plant-leaf-classification-system-" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Plant Disease Classifier source code on GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Source
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="browser-mockup">
+                        <div class="browser-header" aria-hidden="true">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <div class="url-bar">huggingface.co/spaces/deepak0027</div>
+                        </div>
+                        <div class="img-container">
+                            <img src="plant.png"
+                                 alt="Plant Disease Classifier — Gradio interface showing leaf image analysis"
+                                 class="project-img" loading="lazy">
+                            <div class="overlay-gradient" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- PROJECT 3 -->
+        <div class="project-showcase ai web mb-5 reveal-block" style="--rd:0.2s">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-5 p-4 p-lg-5">
+                    <div class="live-badge">
+                        <span class="dot-pulse" aria-hidden="true"></span> Live on Streamlit
+                    </div>
+                    <h3 class="project-title">Real Estate Advisor</h3>
+                    <p class="project-desc">
+                        A machine learning predictive platform that analyzes over 18 features using
+                        XGBoost to forecast 5-year property values and deliver actionable
+                        investment verdicts.
+                    </p>
+                    <div class="tech-tags">
+                        <span>XGBoost</span>
+                        <span>Scikit-Learn</span>
+                        <span>Streamlit</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="action-btns mt-4">
+                        <a href="https://real-estate-advisor-lvxveof4ymqie5ckxauudi.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+                            Launch App <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/D0027/real-estate-advisor" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Real Estate Advisor source code on GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i> Source
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="browser-mockup">
+                        <div class="browser-header" aria-hidden="true">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <div class="url-bar">real-estate-advisor.streamlit.app</div>
+                        </div>
+                        <div class="img-container">
+                            <img src="real.png"
+                                 alt="Real Estate Advisor — Streamlit dashboard for XGBoost-powered property price prediction"
+                                 class="project-img" loading="lazy">
+                            <div class="overlay-gradient" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section-padding bg-grid" aria-labelledby="contact-heading">
+    <div class="container">
+
+        <div class="section-header text-center mb-5 reveal-block">
+            <span class="badge-title">Get in Touch</span>
+            <h2 class="section-title" id="contact-heading">
+                Initialize <span class="text-gradient">Connection</span>
+            </h2>
+            <p class="section-desc">
+                Have a project in mind or want to discuss the latest in AI?
+                Send a signal and I'll respond within 24 hours.
+            </p>
+        </div>
+
+        <div class="row g-5">
+
+            <div class="col-lg-5 reveal-block">
+                <div class="contact-info-wrapper">
+
+                    <div class="contact-card">
+                        <div class="icon-box" aria-hidden="true">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Interface</h3>
+                            <a href="mailto:dy0169489@gmail.com" class="contact-link">dy0169489@gmail.com</a>
+                            <p>
+                                <span class="status-dot online" aria-hidden="true"></span>
+                                <small>Online Now</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon-box purple" aria-hidden="true">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Base of Operations</h3>
+                            <p>Bharuch, Gujarat, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card social-card">
+                        <h3>Network Nodes</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/deepakyadav027/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Deepak Yadav on LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/D0027" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Deepak Yadav on GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://dy0169489.wixsite.com/deepak-yadav" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Deepak Yadav's website">
+                                <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-7 reveal-block" style="--rd:0.15s">
+                <div class="form-container">
+                    <form id="my-form"
+                          action="https://formspree.io/f/xpqwbgjy"
+                          method="POST"
+                          class="contact-form"
+                          novalidate>
+                        <div class="row g-4">
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="text" name="name" id="name" required placeholder=" " autocomplete="name">
+                                    <label for="name">Your Name</label>
+                                    <div class="line" aria-hidden="true"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="email" name="email" id="email" required placeholder=" " autocomplete="email">
+                                    <label for="email">Your Email</label>
+                                    <div class="line" aria-hidden="true"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <input type="text" name="subject" id="subject" required placeholder=" ">
+                                    <label for="subject">Subject Protocol</label>
+                                    <div class="line" aria-hidden="true"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="input-group">
+                                    <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                                    <label for="message">Transmission Data (Message)</label>
+                                    <div class="line" aria-hidden="true"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit" id="my-form-button">
+                                    <span>Transmit Message</span>
+                                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-12">
+                                <p id="my-form-status"
+                                   class="text-center mt-3 fw-bold"
+                                   role="status"
+                                   aria-live="polite"></p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════════════════ -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-5">
+
+            <div class="col-lg-4">
+                <a class="footer-brand" href="#home" aria-label="Back to top">
+                    Deepak<span class="highlight">.Neural</span><span class="brackets">()</span>
+                </a>
+                <p class="footer-desc mt-3">
+                    Architecting the future with code. Specialized in Deep Learning models,
+                    Computer Vision, and scalable Web Architectures.
+                </p>
+                <div class="status-indicator" aria-label="System status: Online">
+                    <span class="status-dot pulse-green" aria-hidden="true"></span>
+                    <span>System Status: <span class="text-green">Online</span></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 offset-lg-1">
+                <h5 class="footer-heading">Navigation</h5>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> About</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h5 class="footer-heading">Connect Protocol</h5>
+                <div class="social-wrapper">
+                    <a href="https://www.linkedin.com/in/deepakyadav027" target="_blank" rel="noopener noreferrer" class="social-card linkedin" aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/D0027" target="_blank" rel="noopener noreferrer" class="social-card github" aria-label="GitHub profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="http://deepakai.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" class="social-card website" aria-label="Live AI project">
+                        <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                        <span>Live AI Project</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="line-divider"></div>
+            <p>
+                &copy; 2026 Deepak Yadav. Engineered with
+                <i class="fa-solid fa-heart text-danger" aria-hidden="true"></i>
+                &amp; Intelligence.
+            </p>
+        </div>
+    </div>
+
+    <a href="#home" id="scroll-top" class="scroll-top-btn" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
