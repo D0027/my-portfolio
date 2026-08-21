@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = saved || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak Yadav | AI & ML Engineer — Deep Learning, NLP, Computer Vision</title>
     <meta name="description" content="Deepak Yadav is an AI & ML Engineer specializing in Deep Learning, Computer Vision, and NLP. Building intelligent systems with Python, TensorFlow, and PyTorch. Available for projects.">
@@ -59,6 +67,7 @@
 
     <!-- GSAP for advanced animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
@@ -75,16 +84,22 @@
 
 <!-- ═══ PAGE LOADER ═══════════════════════════════════════════════════════ -->
 <div id="page-loader" aria-hidden="true">
-    <div class="loader-content">
-        <div class="loader-logo">
-            <span class="l-bracket">[</span>
-            <span class="l-name">D.Neural</span>
-            <span class="l-bracket">]</span>
+    <div class="loader-particles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="terminal-boot">
+        <div class="terminal-boot-header">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+            <span class="terminal-boot-title">deepak@neural-core: ~</span>
         </div>
-        <div class="loader-bar-track">
-            <div class="loader-bar-fill"></div>
+        <div class="terminal-boot-body" id="boot-lines"></div>
+        <div class="terminal-boot-progress">
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill"></div>
+            </div>
         </div>
-        <div class="loader-text">Initializing Systems...</div>
     </div>
 </div>
 
@@ -108,9 +123,39 @@
 <!-- ═══ NOISE TEXTURE ════════════════════════════════════════════════════ -->
 <div class="noise-overlay" aria-hidden="true"></div>
 
+
+<!-- ═══ CURTAIN INTRO ════════════════════════════════════════════════════ -->
+<div id="curtain-intro" aria-hidden="true">
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.00s; --bc-gx:0%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.07s; --bc-gx:14%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.14s; --bc-gx:28%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.21s; --bc-gx:42%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.28s; --bc-gx:56%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.35s; --bc-gx:70%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.42s; --bc-gx:84%;"></div></div>
+    <div class="blind-col"><div class="blind-col-mask" style="--bc-d:0.49s; --bc-gx:100%;"></div></div>
+</div>
+
+
 <!-- ═══ SCROLL PROGRESS ══════════════════════════════════════════════════ -->
 <div id="scroll-progress" aria-hidden="true">
     <div id="scroll-progress-bar"></div>
+</div>
+
+<div id="cmdk-overlay" class="cmdk-overlay" aria-hidden="true">
+    <div id="cmdk-palette" class="cmdk-palette" role="dialog" aria-modal="true" aria-label="Command palette">
+        <div class="cmdk-input-row">
+            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+            <input type="text" id="cmdk-input" class="cmdk-input" placeholder="Type a command or search..." autocomplete="off" spellcheck="false" aria-label="Command palette search">
+            <span class="cmdk-esc">ESC</span>
+        </div>
+        <ul id="cmdk-results" class="cmdk-results" role="listbox"></ul>
+        <div class="cmdk-footer">
+            <span><i class="fa-solid fa-arrow-up" aria-hidden="true"></i><i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Navigate</span>
+            <span><i class="fa-solid fa-turn-down" aria-hidden="true" style="transform:scaleX(-1)"></i> Select</span>
+            <span>ESC Close</span>
+        </div>
+    </div>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
@@ -135,9 +180,22 @@
                 <li class="nav-item"><a class="nav-link" href="#expertise">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#qualification">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             </ul>
         </div>
+
+        <button type="button" id="cmdk-trigger" class="cmdk-trigger d-none d-lg-flex" aria-label="Open command palette (Ctrl+K)">
+             <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <span>Quick Search</span>
+              <kbd>Ctrl K</kbd>
+        </button>
+
+        <button type="button" id="theme-toggle" class="theme-toggle d-none d-lg-flex" aria-label="Toggle dark mode">
+             <i class="fa-solid fa-sun theme-icon-sun" aria-hidden="true"></i>
+             <i class="fa-solid fa-moon theme-icon-moon" aria-hidden="true"></i>
+              <span class="theme-thumb"></span>
+        </button>
 
         <a href="#contact" class="btn-liquid d-none d-lg-block" aria-label="Contact Deepak">
             <span>Chat</span>
@@ -150,6 +208,7 @@
      HERO
 ════════════════════════════════════════════════════════════════════════ -->
 <section id="home" class="hero-section" aria-label="Introduction">
+    <div class="hero-spotlight" id="hero-spotlight" aria-hidden="true"></div>
     <div class="hero-grid" aria-hidden="true"></div>
 
     <!-- Floating data particles -->
@@ -179,7 +238,7 @@
 
                 <h1 class="hero-title" data-hero-el>
                     Hello! I Am <br>
-                    <span class="highlight-name">Deepak Yadav</span>
+                    <span class="highlight-name" id="hero-name">Deepak Yadav<span class="name-scan-line" id="name-scan-line"></span></span>
                 </h1>
 
                 <h2 class="hero-subtitle" data-hero-el>
@@ -195,6 +254,22 @@
                     I bridge the gap between complex data and human experience,
                     building adaptive AI systems that learn, evolve, and solve real-world problems.
                 </p>
+                <div class="hero-stats" data-hero-el>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num"><span class="hero-counter" data-target="3">0</span>+</span>
+                        <span class="hero-stat-label">Projects Shipped</span>  
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num"><span class="hero-counter" data-target="3">0</span></span>
+                        <span class="hero-stat-label">Live in Production</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num"><span class="hero-counter" data-target="2">0</span></span>
+                        <span class="hero-stat-label">Internships Completed</span>
+                    </div>
+                </div>
 
                 <div class="btn-group-hero" data-hero-el>
                     <a href="#contact" class="btn-hire">
@@ -220,6 +295,7 @@
             <!-- ── Right: AI Sphere ── -->
             <div class="col-lg-6 hero-img-wrapper" aria-hidden="true">
                 <div class="ai-visual-wrapper">
+                     <canvas id="neural-3d-canvas" aria-hidden="true"></canvas>
                     <div class="ai-sphere">
                         <div class="ring ring-1"></div>
                         <div class="ring ring-2"></div>
@@ -301,6 +377,7 @@
             <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.1s">
                 <div class="service-card tilt-card">
                     <div class="card-glow-border" aria-hidden="true"></div>
+                    <div class="card-trace-border" aria-hidden="true"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-brain" aria-hidden="true"></i>
                         <div class="icon-bg"></div>
@@ -316,6 +393,7 @@
             <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.22s">
                 <div class="service-card active-card tilt-card">
                     <div class="card-glow-border active-glow" aria-hidden="true"></div>
+                    <div class="card-trace-border" aria-hidden="true"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
                         <div class="icon-bg"></div>
@@ -331,6 +409,7 @@
             <div class="col-lg-4 col-md-6 reveal-block" style="--rd:0.34s">
                 <div class="service-card tilt-card">
                     <div class="card-glow-border" aria-hidden="true"></div>
+                    <div class="card-trace-border" aria-hidden="true"></div>
                     <div class="icon-wrapper">
                         <i class="fa-solid fa-database" aria-hidden="true"></i>
                         <div class="icon-bg"></div>
@@ -469,6 +548,84 @@
     </div>
 </section>
 
+<section id="skill-tree" class="section-padding" aria-labelledby="tree-heading">
+    <div class="container">
+        <div class="text-center mb-5 reveal-block">
+            <span class="section-badge">LEVEL UP</span>
+            <h2 id="tree-heading" class="section-title">Skill <span class="text-gradient">Tree</span></h2>
+            <p class="section-subtitle">An RPG-style map of my technical progression — click any node to inspect it.</p>
+        </div>
+
+        <div class="skill-tree-wrapper reveal-block">
+            <svg class="skill-tree-lines" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="500" y1="60"  x2="500" y2="180" />
+                <line x1="500" y1="180" x2="230" y2="300" />
+                <line x1="500" y1="180" x2="500" y2="300" />
+                <line x1="500" y1="180" x2="770" y2="300" />
+                <line x1="230" y1="300" x2="230" y2="420" />
+                <line x1="500" y1="300" x2="500" y2="420" />
+                <line x1="770" y1="300" x2="770" y2="420" />
+
+                <circle class="tree-pulse-dot" r="5" id="pulse-1"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-2"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-3"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-4"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-5"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-6"></circle>
+                <circle class="tree-pulse-dot" r="5" id="pulse-7"></circle>
+            </svg>
+
+            <button type="button" class="skill-node root" style="--nx:50%; --ny:8%;" data-name="Deepak.AI Core" data-desc="Foundation of all skills — Python-driven problem solving and systems thinking." data-xp="100">
+                <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                <span>Core</span>
+            </button>
+
+            <button type="button" class="skill-node tier1" style="--nx:50%; --ny:37%;" data-name="Python" data-desc="Primary language across ML pipelines, backend systems, and automation." data-xp="95">
+                <i class="fa-brands fa-python" aria-hidden="true"></i>
+                <span>Python</span>
+            </button>
+
+            <button type="button" class="skill-node tier2" style="--nx:23%; --ny:62%;" data-name="Machine Learning" data-desc="TensorFlow, PyTorch — training and deploying predictive & deep learning models." data-xp="88">
+                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                <span>ML / DL</span>
+            </button>
+            <button type="button" class="skill-node tier2" style="--nx:50%; --ny:62%;" data-name="Computer Vision" data-desc="OpenCV & Vision Transformers for image classification and diagnostics." data-xp="82">
+                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                <span>Vision</span>
+            </button>
+            <button type="button" class="skill-node tier2" style="--nx:77%; --ny:62%;" data-name="Deployment" data-desc="Django, Streamlit & Gradio for shipping full working products." data-xp="90">
+                <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                <span>Deploy</span>
+            </button>
+
+            <button type="button" class="skill-node tier3" style="--nx:23%; --ny:87%;" data-name="NLP" data-desc="Text detection, language models, and Hinglish code-mixed text analysis." data-xp="70">
+                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                <span>NLP</span>
+            </button>
+            <button type="button" class="skill-node tier3" style="--nx:50%; --ny:87%;" data-name="Data Viz" data-desc="Plotly, Recharts & dashboards that turn raw data into decisions." data-xp="75">
+                <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+                <span>Data Viz</span>
+            </button>
+            <button type="button" class="skill-node tier3" style="--nx:77%; --ny:87%;" data-name="Databases" data-desc="MySQL, SQLite — schema design, query optimization, and indexing." data-xp="78">
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                <span>SQL</span>
+            </button>
+        </div>
+
+        <div id="skill-tooltip" class="skill-tooltip" aria-hidden="true">
+            <button type="button" class="skill-tooltip-close" aria-label="Close">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+            <h4 id="skill-tooltip-title"></h4>
+            <p id="skill-tooltip-desc"></p>
+            <div class="skill-tooltip-xp-track">
+                <div id="skill-tooltip-xp-fill" class="skill-tooltip-xp-fill"></div>
+            </div>
+            <span id="skill-tooltip-xp-label" class="skill-tooltip-xp-label"></span>
+        </div>
+    </div>
+</section>
+
 <!-- ═══════════════════════════════════════════════════════════════════════
      EDUCATION TIMELINE
 ════════════════════════════════════════════════════════════════════════ -->
@@ -489,7 +646,7 @@
 
             <div class="timeline-item left reveal-block">
                 <div class="timeline-content">
-                    <div class="date-badge">2024 — 2026</div>
+                    <div class="date-badge">Jun 2024 — Apr 2026</div>
                     <h3 class="degree">Master of Computer Application</h3>
                     <h4 class="university">P P Savani University</h4>
                     <p class="location">
@@ -511,7 +668,7 @@
 
             <div class="timeline-item right reveal-block" style="--rd:0.2s">
                 <div class="timeline-content">
-                    <div class="date-badge">2021 — 2024</div>
+                    <div class="date-badge">Jul 2021 — Apr 2024</div>
                     <h3 class="degree">Bachelor of Computer Application</h3>
                     <h4 class="university">Saurashtra University</h4>
                     <p class="location">
@@ -537,6 +694,94 @@
     </div>
 </section>
 
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════════════════════════════════════ -->
+<section id="experience" class="section-padding" aria-labelledby="experience-heading">
+    <div class="container">
+
+        <div class="section-header text-center mb-5 reveal-block">
+            <span class="badge-title">Career Path</span>
+            <h2 class="section-title" id="experience-heading">
+                Professional <span class="text-gradient">Experience</span>
+            </h2>
+            <p class="section-desc">
+                Real-world roles where I've applied AI and data skills to solve actual problems.
+            </p>
+        </div>
+
+        <div class="exp-list">
+
+            <div class="exp-card reveal-block">
+                <div class="exp-accent"></div>
+                <div class="exp-card-inner">
+                    <div class="exp-logo">
+                        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-top-row">
+                            <div>
+                                <h3 class="exp-role">Data Science Intern</h3>
+                                <p class="exp-company">Innovexis <span class="exp-dot">•</span> Internship</p>
+                            </div>
+                            <span class="exp-duration">Apr 2026 — Jul 2026</span>
+                        </div>
+                        <p class="exp-location">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            Pune District, Maharashtra, India <span class="exp-dot">•</span> Remote
+                        </p>
+                        <p class="exp-desc">
+                            Worked extensively with data collection, preprocessing, visualization, and predictive modeling using Python, Pandas, NumPy, Matplotlib, Scikit-learn, and SQL — building a strong foundation in statistical analysis, machine learning algorithms, and data-driven decision-making.
+                        </p>
+                        <div class="exp-skills">
+                            <span>Generative AI</span>
+                            <span>Data Science</span>
+                            <span>Python</span>
+                            <span>Model Deployment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-card reveal-block" style="--rd:0.15s">
+                <div class="exp-accent purple"></div>
+                <div class="exp-card-inner">
+                    <div class="exp-logo purple">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-top-row">
+                            <div>
+                                <h3 class="exp-role">Data Analyst</h3>
+                                <p class="exp-company">Internshala <span class="exp-dot">•</span> Internship</p>
+                            </div>
+                            <span class="exp-duration">Mar 2024 — Apr 2024</span>
+                        </div>
+                        <p class="exp-location">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            Rajkot, Gujarat, India <span class="exp-dot">•</span> Remote
+                        </p>
+                        <p class="exp-desc">
+                            Completed intensive Advanced Excel training, working with data more efficiently
+                            and professionally on real analytical tasks.
+                        </p>
+                        <div class="exp-skills">
+                            <span>Microsoft Excel</span>
+                            <span>Microsoft Office</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
 <!-- ═══════════════════════════════════════════════════════════════════════
      PROJECTS
 ════════════════════════════════════════════════════════════════════════ -->
@@ -559,7 +804,7 @@
             <button class="btn-filter" data-filter="ai">AI / ML</button>
         </div>
 
-        <!-- PROJECT 1 -->
+       <!-- PROJECT 1 -->
         <div class="project-showcase ai web mb-5 reveal-block">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-5 p-4 p-lg-5">
@@ -585,7 +830,11 @@
                         <a href="https://github.com/D0027/AI_Game_Website" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Neural Arena source code on GitHub">
                             <i class="fa-brands fa-github" aria-hidden="true"></i> Source
                         </a>
+                        <button type="button" class="btn-insights" data-stats='{"Tech Relevance":92,"Code Complexity":78,"Innovation Index":88,"Deploy Readiness":95}' aria-expanded="false">
+                            <i class="fa-solid fa-chart-simple" aria-hidden="true"></i> Analyze
+                        </button>
                     </div>
+                    <div class="insights-panel" aria-hidden="true"></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="browser-mockup">
@@ -596,9 +845,16 @@
                             <div class="url-bar">deepakai.pythonanywhere.com</div>
                         </div>
                         <div class="img-container">
-                            <img src="deepak-ai.png"
-                                 alt="Neural Arena platform — AI game website with machine learning models built using Django and TensorFlow"
-                                 class="project-img" loading="lazy">
+                            <div class="img-reveal-panel" aria-hidden="true"></div>
+                            <div class="compare-slider">
+                                <img src="neural b.png" alt="Neural Arena — before" class="compare-img compare-before">
+                                <img src="neural a.png" alt="Neural Arena — after" class="compare-img compare-after">
+                                <div class="compare-handle" aria-hidden="true">
+                                    <i class="fa-solid fa-arrows-left-right"></i>
+                                </div>
+                                <span class="compare-label compare-label-left">Before</span>
+                                <span class="compare-label compare-label-right">After</span>
+                            </div>
                             <div class="overlay-gradient" aria-hidden="true"></div>
                         </div>
                     </div>
@@ -632,7 +888,11 @@
                         <a href="https://github.com/D0027/plant-leaf-classification-system-" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Plant Disease Classifier source code on GitHub">
                             <i class="fa-brands fa-github" aria-hidden="true"></i> Source
                         </a>
+                        <button type="button" class="btn-insights" data-stats='{"Tech Relevance":95,"Code Complexity":85,"Innovation Index":91,"Deploy Readiness":89}' aria-expanded="false">
+                            <i class="fa-solid fa-chart-simple" aria-hidden="true"></i> Analyze
+                        </button>
                     </div>
+                    <div class="insights-panel" aria-hidden="true"></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="browser-mockup">
@@ -643,9 +903,16 @@
                             <div class="url-bar">huggingface.co/spaces/deepak0027</div>
                         </div>
                         <div class="img-container">
-                            <img src="plant.png"
-                                 alt="Plant Disease Classifier — Gradio interface showing leaf image analysis"
-                                 class="project-img" loading="lazy">
+                            <div class="img-reveal-panel" aria-hidden="true"></div>
+                            <div class="compare-slider">
+                                <img src="plant b.png" alt="Plant Disease Classifier — raw leaf" class="compare-img compare-before">
+                                <img src="plant a.png" alt="Plant Disease Classifier — Gradio interface showing leaf image analysis" class="compare-img compare-after">
+                                <div class="compare-handle" aria-hidden="true">
+                                    <i class="fa-solid fa-arrows-left-right"></i>
+                                </div>
+                                <span class="compare-label compare-label-left">Raw Leaf</span>
+                                <span class="compare-label compare-label-right">AI Diagnosis</span>
+                            </div>
                             <div class="overlay-gradient" aria-hidden="true"></div>
                         </div>
                     </div>
@@ -679,7 +946,11 @@
                         <a href="https://github.com/D0027/real-estate-advisor" target="_blank" rel="noopener noreferrer" class="btn-git" aria-label="Real Estate Advisor source code on GitHub">
                             <i class="fa-brands fa-github" aria-hidden="true"></i> Source
                         </a>
+                        <button type="button" class="btn-insights" data-stats='{"Tech Relevance":87,"Code Complexity":81,"Innovation Index":84,"Deploy Readiness":93}' aria-expanded="false">
+                            <i class="fa-solid fa-chart-simple" aria-hidden="true"></i> Analyze
+                        </button>
                     </div>
+                    <div class="insights-panel" aria-hidden="true"></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="browser-mockup">
@@ -690,9 +961,16 @@
                             <div class="url-bar">real-estate-advisor.streamlit.app</div>
                         </div>
                         <div class="img-container">
-                            <img src="real.png"
-                                 alt="Real Estate Advisor — Streamlit dashboard for XGBoost-powered property price prediction"
-                                 class="project-img" loading="lazy">
+                            <div class="img-reveal-panel" aria-hidden="true"></div>
+                            <div class="compare-slider">
+                                <img src="real b.png" alt="Real Estate Advisor — input form" class="compare-img compare-before">
+                                <img src="real a.png" alt="Real Estate Advisor — Streamlit dashboard for XGBoost-powered property price prediction" class="compare-img compare-after">
+                                <div class="compare-handle" aria-hidden="true">
+                                    <i class="fa-solid fa-arrows-left-right"></i>
+                                </div>
+                                <span class="compare-label compare-label-left">Input</span>
+                                <span class="compare-label compare-label-right">Result</span>
+                            </div>
                             <div class="overlay-gradient" aria-hidden="true"></div>
                         </div>
                     </div>
@@ -702,7 +980,6 @@
 
     </div>
 </section>
-
 <!-- ═══════════════════════════════════════════════════════════════════════
      CONTACT
 ════════════════════════════════════════════════════════════════════════ -->
@@ -768,8 +1045,16 @@
             </div>
 
             <div class="col-lg-7 reveal-block" style="--rd:0.15s">
-                <div class="form-container">
-                    <form id="my-form"
+              <div class="form-container" id="form-container-el">
+                 <div class="transmit-pulse-sweep" id="transmit-sweep" aria-hidden="true"></div>
+                 <div class="transmit-success-card" id="transmit-success" aria-hidden="true">
+                    <div class="transmit-success-icon">
+                       <i class="fa-solid fa-signal" aria-hidden="true"></i>
+                   </div>
+                   <span class="transmit-success-title">Transmission Received</span>
+                   <span class="transmit-success-sub">Signal acknowledged — Deepak will respond within 24h</span>
+              </div>
+              <form id="my-form"
                           action="https://formspree.io/f/xpqwbgjy"
                           method="POST"
                           class="contact-form"
@@ -856,7 +1141,9 @@
                 <h5 class="footer-heading">Navigation</h5>
                 <ul class="footer-links">
                     <li><a href="#home"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#expertise"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Services</a></li>
                     <li><a href="#skills"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> About</a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Experience</a></li>
                     <li><a href="#projects"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Projects</a></li>
                     <li><a href="#contact"><i class="fa-solid fa-angle-right" aria-hidden="true"></i> Contact</a></li>
                 </ul>
@@ -900,6 +1187,55 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+
+<!-- ═══ AI FAQ CHATBOT ══════════════════════════════════════════════════ -->
+<button type="button" id="bot-toggle" class="bot-toggle" aria-label="Open chat assistant" aria-expanded="false">
+    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    <span class="bot-toggle-ping" aria-hidden="true"></span>
+</button>
+
+<div id="bot-window" class="bot-window" aria-hidden="true">
+    <div class="bot-header">
+        <div class="bot-header-info">
+            <span class="bot-avatar"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>
+            <div>
+                <h4>Neural Assistant</h4>
+                <span class="bot-status"><i class="fa-solid fa-circle" aria-hidden="true"></i> Online</span>
+            </div>
+        </div>
+        <button type="button" id="bot-close" class="bot-close" aria-label="Close chat">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div id="bot-messages" class="bot-messages" role="log" aria-live="polite"></div>
+
+    <div class="bot-quick-replies" id="bot-quick-replies"></div>
+
+    <form id="bot-form" class="bot-input-row">
+        <input type="text" id="bot-input" placeholder="Ask about skills, projects, contact..." autocomplete="off" aria-label="Type your message">
+        <button type="submit" aria-label="Send message"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+    </form>
+</div>
+
+
+<!-- ═══ VOICE NARRATION ═════════════════════════════════════════════════ -->
+<button type="button" id="narrate-toggle" class="narrate-toggle" aria-label="Listen to portfolio narration" aria-pressed="false">
+    <i class="fa-solid fa-volume-high narrate-icon-on" aria-hidden="true"></i>
+    <i class="fa-solid fa-volume-xmark narrate-icon-off" aria-hidden="true"></i>
+</button>
+<div id="narrate-caption" class="narrate-caption" aria-live="polite"></div>
+
+<canvas id="matrix-canvas" aria-hidden="true"></canvas>
+<div id="egg-toast" class="egg-toast" aria-hidden="true">
+    <div class="egg-toast-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
+    <div>
+        <strong>Developer Mode Unlocked 🚀</strong>
+        <span>You found the secret. Nice eye for detail — that's exactly what I look for in code too.</span>
+    </div>
+</div>
+
 
 </body>
 </html>
