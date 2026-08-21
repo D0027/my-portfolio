@@ -114,9 +114,9 @@ Every interaction is intentional — a terminal-style boot sequence, a cinematic
 
 | Project | Description | Stack | Status |
 |:---|:---|:---:|:---:|
-| **[Neural Arena](http://deepakai.pythonanywhere.com/)** | AI-powered gaming hub with real-time ML models | `Django` `TensorFlow` | 🟢 Live |
-| **[Plant Disease Classifier](https://huggingface.co/spaces/deepak0027)** | Vision Transformer crop diagnosis, 99.13% accuracy | `PyTorch` `Gradio` | 🟢 Live |
-| **[Real Estate Advisor](https://real-estate-advisor-lvxveof4ymqie5ckxauudi.streamlit.app/)** | XGBoost 5-year property value forecasting | `XGBoost` `Streamlit` | 🟢 Live |
+| **Neural Arena** | AI-powered gaming hub with real-time ML models | `Django` `TensorFlow` | 🟢 Live |
+| **Plant Disease Classifier** | Vision Transformer crop diagnosis, 99.13% accuracy | `PyTorch` `Gradio` | 🟢 Live |
+| **Real Estate Advisor** | XGBoost 5-year property value forecasting | `XGBoost` `Streamlit` | 🟢 Live |
 
 </div>
 
