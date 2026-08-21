@@ -40,6 +40,10 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=D0027&label=Profile+Views&color=00d9ff&style=for-the-badge&labelColor=0a0e1a" alt="Profile views"/>
+
 </div>
 
 <br/>
@@ -60,7 +64,7 @@
 
 ### 📖 Table of Contents
 
-[The Vision](#-the-vision) • [Preview](#-preview) • [What's Inside](#️-whats-inside) • [Engineering Principles](#-engineering-principles) • [Tech Stack](#️-tech-stack) • [Run It Locally](#-run-it-locally) • [Structure](#-structure) • [Roadmap](#-roadmap) • [Establish Connection](#-establish-connection)
+[The Vision](#-the-vision) • [What's Inside](#️-whats-inside) • [Engineering Principles](#-engineering-principles) • [Tech Stack](#️-tech-stack) • [Run It Locally](#-run-it-locally) • [Structure](#-structure) • [Roadmap](#-roadmap) • [Establish Connection](#-establish-connection)
 
 </div>
 
@@ -73,22 +77,6 @@
 This isn't a template with content swapped in — it's a **fully hand-engineered digital experience**, built to reflect who I am as an engineer: precise, systematic, and a little obsessed with the details nobody else notices.
 
 Every pixel serves a purpose. Every animation tells part of a story — raw data becoming structured intelligence, chaos resolving into order, one scroll at a time.
-
-<br/>
-
-## 🖼 Preview
-
-<div align="center">
-
-<!-- Replace the placeholders below with real screenshots or a screen-recording GIF once available -->
-
-| Landing / Boot Sequence | Skill Tree | Project Showcase |
-|:---:|:---:|:---:|
-| ![Landing preview](https://via.placeholder.com/360x220/0a0e1a/00d9ff?text=Boot+Sequence) | ![Skill tree preview](https://via.placeholder.com/360x220/0a0e1a/f472b6?text=Skill+Tree) | ![Project preview](https://via.placeholder.com/360x220/0a0e1a/10b981?text=Projects) |
-
-*Swap these placeholder images for real screenshots or a GIF walkthrough in `assets/`.*
-
-</div>
 
 <br/>
 
