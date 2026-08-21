@@ -1,22 +1,32 @@
 <div align="center">
 
-<img src="deepak.png" alt="Deepak Yadav Banner" width="100%"/>
+<img src="deepak.png" alt="Deepak Yadav — Neural Portfolio Banner" width="100%"/>
 
 <br/>
 
-# ⚡ DEEPAK.NEURAL()
-
-### `AI Engineer` × `Full Stack Developer` × `Systems Architect`
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=600&lines=DEEPAK.NEURAL();+SYSTEM+ONLINE;+AI+ENGINEER+%C3%97+FULL+STACK;+CHAOS+%E2%86%92+ORDER" alt="Typing SVG" />
 
 <br/>
 
-**"I don't just write code — I train systems to think."**
+### `AI Engineer` &nbsp;×&nbsp; `Full Stack Developer` &nbsp;×&nbsp; `Systems Architect`
 
 <br/>
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-Visit_Now-00d9ff?style=for-the-badge&labelColor=0a0e1a)](https://d0027.github.io/my-portfolio/)
-[![Status](https://img.shields.io/badge/⚡_STATUS-Online-10b981?style=for-the-badge&labelColor=0a0e1a)](https://github.com/D0027)
-[![Open To Work](https://img.shields.io/badge/💼_AVAILABLE-For_Hire-f472b6?style=for-the-badge&labelColor=0a0e1a)](mailto:dy0169489@gmail.com)
+> **"I don't just write code — I train systems to think."**
+
+<br/>
+
+<p>
+<a href="https://d0027.github.io/my-portfolio/"><img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-Visit_Now-00d9ff?style=for-the-badge&labelColor=0a0e1a" /></a>
+<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/⚡_STATUS-Online-10b981?style=for-the-badge&labelColor=0a0e1a" /></a>
+<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/💼_AVAILABLE-For_Hire-f472b6?style=for-the-badge&labelColor=0a0e1a" /></a>
+</p>
+
+<p>
+<img src="https://img.shields.io/github/stars/D0027/my-portfolio?style=for-the-badge&color=00d9ff&labelColor=0a0e1a" />
+<img src="https://img.shields.io/github/forks/D0027/my-portfolio?style=for-the-badge&color=f472b6&labelColor=0a0e1a" />
+<img src="https://img.shields.io/github/last-commit/D0027/my-portfolio?style=for-the-badge&color=10b981&labelColor=0a0e1a" />
+</p>
 
 <br/>
 
@@ -29,9 +39,9 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
-</div>
-
 <br/>
+
+</div>
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -44,6 +54,16 @@
 │  ✓ System Ready.                                          │
 └──────────────────────────────────────────────────────────┘
 ```
+
+<div align="center">
+
+### 📖 Table of Contents
+
+[The Vision](#-the-vision) • [What's Inside](#️-whats-inside) • [Engineering Principles](#-engineering-principles) • [Tech Stack](#️-tech-stack) • [Run Locally](#-run-it-locally) • [Structure](#-structure) • [Connect](#-establish-connection)
+
+</div>
+
+---
 
 <br/>
 
@@ -62,27 +82,29 @@ Every pixel serves a purpose. Every animation tells part of a story — raw data
 <td width="50%" valign="top">
 
 ### 🎬 Cinematic Layer
-```diff
-+ Terminal-style boot sequence
-+ Aurora-glow loading screen
-+ Vertical blind curtain reveal
-+ 3D neural network — chaos → order
-+ Cursor-reactive spotlight (desktop)
-+ Scan-line name reveal
-```
+
+| | |
+|---|---|
+| 🖥️ | Terminal-style boot sequence |
+| 🌈 | Aurora-glow loading screen |
+| 🎞️ | Vertical blind curtain reveal |
+| 🧬 | 3D neural network — chaos → order |
+| 🔦 | Cursor-reactive spotlight *(desktop)* |
+| 📼 | Scan-line name reveal |
 
 </td>
 <td width="50%" valign="top">
 
 ### 🧩 Interactive Layer
-```diff
-+ RPG-style Skill Tree with data pulses
-+ Before/After project comparison sliders
-+ Circuit-trace glowing card borders
-+ Cmd/Ctrl + K command palette
-+ Magnetic custom cursor
-+ Konami code easter egg 🥚
-```
+
+| | |
+|---|---|
+| 🌳 | RPG-style Skill Tree with data pulses |
+| 🔀 | Before/After project comparison sliders |
+| ⚡ | Circuit-trace glowing card borders |
+| ⌨️ | `Cmd/Ctrl + K` command palette |
+| 🧲 | Magnetic custom cursor |
+| 🥚 | Konami code easter egg |
 
 </td>
 </tr>
@@ -92,22 +114,48 @@ Every pixel serves a purpose. Every animation tells part of a story — raw data
 
 ## 🧠 Engineering Principles
 
+<table width="100%">
+<tr>
+<td width="33%" valign="top">
+
+**🎨 Design System**
 ```yaml
-design_system:
-  aesthetic: "Neural Systems — dark navy, glassmorphism, neon accents"
-  motion: "GSAP + ScrollTrigger — every animation replay-aware"
-  rendering: "Three.js — real layered network, not decoration"
-
-accessibility:
-  reduced_motion: respected
-  keyboard_nav: fully supported
-  contrast: WCAG-conscious
-
-performance:
-  frameworks: none
-  dependencies: minimal, purposeful
-  mobile: fully responsive, gracefully degraded
+aesthetic: Neural Systems
+  — dark navy
+  — glassmorphism
+  — neon accents
+motion: GSAP + ScrollTrigger
+  — replay-aware
+render: Three.js
+  — real layered net
+  — not decoration
 ```
+
+</td>
+<td width="33%" valign="top">
+
+**♿ Accessibility**
+```yaml
+reduced_motion: respected
+keyboard_nav: full support
+contrast: WCAG-conscious
+```
+
+</td>
+<td width="33%" valign="top">
+
+**🚀 Performance**
+```yaml
+frameworks: none
+dependencies:
+  minimal, purposeful
+mobile: fully responsive
+  gracefully degraded
+```
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -115,14 +163,14 @@ performance:
 
 <div align="center">
 
-| Layer | Stack |
-|:--|:--|
-| 🏗️ **Structure** | Semantic HTML5 |
-| 🎨 **Styling** | CSS3 · Custom Properties · Bootstrap 5 |
-| ⚡ **Logic** | Vanilla JavaScript (ES6+) |
-| 🎞️ **Motion** | GSAP · ScrollTrigger |
-| 🌐 **3D** | Three.js |
-| 📬 **Forms** | Formspree (serverless AJAX) |
+| Layer | Stack | Purpose |
+|:--|:--|:--|
+| 🏗️ **Structure** | Semantic HTML5 | Accessible, meaningful markup |
+| 🎨 **Styling** | CSS3 · Custom Properties · Bootstrap 5 | Theming & responsive grid |
+| ⚡ **Logic** | Vanilla JavaScript (ES6+) | Zero dead weight |
+| 🎞️ **Motion** | GSAP · ScrollTrigger | Cinematic, replay-aware animation |
+| 🌐 **3D** | Three.js | Real-time neural network render |
+| 📬 **Forms** | Formspree | Serverless AJAX contact flow |
 
 </div>
 
@@ -135,6 +183,18 @@ git clone https://github.com/D0027/my-portfolio.git
 cd my-portfolio
 npx serve .
 ```
+
+<details>
+<summary><b>💡 Optional: watch mode / live reload</b></summary>
+
+<br/>
+
+```bash
+npm install -g live-server
+live-server .
+```
+
+</details>
 
 <br/>
 
@@ -151,13 +211,17 @@ my-portfolio/
 
 <br/>
 
+---
+
 <div align="center">
 
 ## 📡 Establish Connection
 
-[![Email](https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dy0169489@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deepakyadav027)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/D0027)
+<p>
+<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/deepakyadav027"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+</p>
 
 <br/>
 
@@ -167,7 +231,7 @@ $ whoami
 
 $ status
 ✓ Actively building
-✓ Open to opportunities  
+✓ Open to opportunities
 ✓ Always learning
 ```
 
@@ -176,5 +240,9 @@ $ status
 **© 2026 Deepak Yadav** — Engineered with ❤️ & Intelligence
 
 ⭐ **Star this repo if it inspired you**
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0a0e1a&height=120&section=footer" width="100%"/>
 
 </div>
