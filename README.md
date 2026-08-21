@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=600&lines=DEEPAK.NEURAL();+SYSTEM+ONLINE;+AI+ENGINEER+%C3%97+FULL+STACK;+CHAOS+%E2%86%92+ORDER" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&width=650&lines=DEEPAK.NEURAL();+SYSTEM+ONLINE;+AI+ENGINEER+%C3%97+FULL+STACK;+CHAOS+%E2%86%92+ORDER" alt="Typing SVG banner" />
 
 <br/>
 
@@ -17,15 +17,16 @@
 <br/>
 
 <p>
-<a href="https://d0027.github.io/my-portfolio/"><img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-Visit_Now-00d9ff?style=for-the-badge&labelColor=0a0e1a" /></a>
-<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/⚡_STATUS-Online-10b981?style=for-the-badge&labelColor=0a0e1a" /></a>
-<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/💼_AVAILABLE-For_Hire-f472b6?style=for-the-badge&labelColor=0a0e1a" /></a>
+<a href="https://d0027.github.io/my-portfolio/"><img src="https://img.shields.io/badge/🌐_LIVE_PORTFOLIO-Visit_Now-00d9ff?style=for-the-badge&labelColor=0a0e1a" alt="Live Portfolio"/></a>
+<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/⚡_STATUS-Online-10b981?style=for-the-badge&labelColor=0a0e1a" alt="Status Online"/></a>
+<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/💼_AVAILABLE-For_Hire-f472b6?style=for-the-badge&labelColor=0a0e1a" alt="Available for Hire"/></a>
 </p>
 
 <p>
-<img src="https://img.shields.io/github/stars/D0027/my-portfolio?style=for-the-badge&color=00d9ff&labelColor=0a0e1a" />
-<img src="https://img.shields.io/github/forks/D0027/my-portfolio?style=for-the-badge&color=f472b6&labelColor=0a0e1a" />
-<img src="https://img.shields.io/github/last-commit/D0027/my-portfolio?style=for-the-badge&color=10b981&labelColor=0a0e1a" />
+<img src="https://img.shields.io/github/stars/D0027/my-portfolio?style=for-the-badge&color=00d9ff&labelColor=0a0e1a" alt="Stars"/>
+<img src="https://img.shields.io/github/forks/D0027/my-portfolio?style=for-the-badge&color=f472b6&labelColor=0a0e1a" alt="Forks"/>
+<img src="https://img.shields.io/github/last-commit/D0027/my-portfolio?style=for-the-badge&color=10b981&labelColor=0a0e1a" alt="Last Commit"/>
+<img src="https://img.shields.io/github/license/D0027/my-portfolio?style=for-the-badge&color=f7df1e&labelColor=0a0e1a" alt="License"/>
 </p>
 
 <br/>
@@ -39,9 +40,9 @@
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
-<br/>
-
 </div>
+
+<br/>
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -59,7 +60,7 @@
 
 ### 📖 Table of Contents
 
-[The Vision](#-the-vision) • [What's Inside](#️-whats-inside) • [Engineering Principles](#-engineering-principles) • [Tech Stack](#️-tech-stack) • [Run Locally](#-run-it-locally) • [Structure](#-structure) • [Connect](#-establish-connection)
+[The Vision](#-the-vision) • [Preview](#-preview) • [What's Inside](#️-whats-inside) • [Engineering Principles](#-engineering-principles) • [Tech Stack](#️-tech-stack) • [Run It Locally](#-run-it-locally) • [Structure](#-structure) • [Roadmap](#-roadmap) • [Establish Connection](#-establish-connection)
 
 </div>
 
@@ -72,6 +73,22 @@
 This isn't a template with content swapped in — it's a **fully hand-engineered digital experience**, built to reflect who I am as an engineer: precise, systematic, and a little obsessed with the details nobody else notices.
 
 Every pixel serves a purpose. Every animation tells part of a story — raw data becoming structured intelligence, chaos resolving into order, one scroll at a time.
+
+<br/>
+
+## 🖼 Preview
+
+<div align="center">
+
+<!-- Replace the placeholders below with real screenshots or a screen-recording GIF once available -->
+
+| Landing / Boot Sequence | Skill Tree | Project Showcase |
+|:---:|:---:|:---:|
+| ![Landing preview](https://via.placeholder.com/360x220/0a0e1a/00d9ff?text=Boot+Sequence) | ![Skill tree preview](https://via.placeholder.com/360x220/0a0e1a/f472b6?text=Skill+Tree) | ![Project preview](https://via.placeholder.com/360x220/0a0e1a/10b981?text=Projects) |
+
+*Swap these placeholder images for real screenshots or a GIF walkthrough in `assets/`.*
+
+</div>
 
 <br/>
 
@@ -121,14 +138,14 @@ Every pixel serves a purpose. Every animation tells part of a story — raw data
 **🎨 Design System**
 ```yaml
 aesthetic: Neural Systems
-  — dark navy
-  — glassmorphism
-  — neon accents
+  - dark navy
+  - glassmorphism
+  - neon accents
 motion: GSAP + ScrollTrigger
-  — replay-aware
+  - replay-aware
 render: Three.js
-  — real layered net
-  — not decoration
+  - real layered net
+  - not decoration
 ```
 
 </td>
@@ -167,7 +184,7 @@ mobile: fully responsive
 |:--|:--|:--|
 | 🏗️ **Structure** | Semantic HTML5 | Accessible, meaningful markup |
 | 🎨 **Styling** | CSS3 · Custom Properties · Bootstrap 5 | Theming & responsive grid |
-| ⚡ **Logic** | Vanilla JavaScript (ES6+) | Zero dead weight |
+| ⚡ **Logic** | Vanilla JavaScript (ES6+) | Zero dead weight, no framework overhead |
 | 🎞️ **Motion** | GSAP · ScrollTrigger | Cinematic, replay-aware animation |
 | 🌐 **3D** | Three.js | Real-time neural network render |
 | 📬 **Forms** | Formspree | Serverless AJAX contact flow |
@@ -178,11 +195,15 @@ mobile: fully responsive
 
 ## 🚀 Run It Locally
 
+**Prerequisites:** [Node.js](https://nodejs.org/) (for the local static server) and `git`.
+
 ```bash
 git clone https://github.com/D0027/my-portfolio.git
 cd my-portfolio
 npx serve .
 ```
+
+Then open the URL printed in your terminal (typically `http://localhost:3000`).
 
 <details>
 <summary><b>💡 Optional: watch mode / live reload</b></summary>
@@ -193,6 +214,8 @@ npx serve .
 npm install -g live-server
 live-server .
 ```
+
+This auto-refreshes the browser on every file save — handy while tweaking `style.css` or `script.js`.
 
 </details>
 
@@ -211,6 +234,18 @@ my-portfolio/
 
 <br/>
 
+## 🗺 Roadmap
+
+- [x] Terminal-style boot sequence
+- [x] 3D neural network hero (Three.js)
+- [x] RPG-style skill tree
+- [x] Command palette (`Cmd/Ctrl + K`)
+- [ ] Blog / devlog section
+- [ ] Dark ↔ light theme toggle
+- [ ] i18n support
+
+<br/>
+
 ---
 
 <div align="center">
@@ -218,9 +253,9 @@ my-portfolio/
 ## 📡 Establish Connection
 
 <p>
-<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://www.linkedin.com/in/deepakyadav027"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="mailto:dy0169489@gmail.com"><img src="https://img.shields.io/badge/-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://www.linkedin.com/in/deepakyadav027"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://github.com/D0027"><img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 
 <br/>
@@ -237,7 +272,7 @@ $ status
 
 <br/>
 
-**© 2026 Deepak Yadav** — Engineered with ❤️ & Intelligence
+**© 2026 Deepak Yadav** — Engineered with ❤️ & Intelligence · Licensed under [MIT](LICENSE)
 
 ⭐ **Star this repo if it inspired you**
 
