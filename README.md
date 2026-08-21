@@ -108,20 +108,6 @@ Every interaction is intentional — a terminal-style boot sequence, a cinematic
 
 ---
 
-## 📂 Live Projects
-
-<div align="center">
-
-| Project | Description | Stack | Status |
-|:---|:---|:---:|:---:|
-| **Neural Arena** | AI-powered gaming hub with real-time ML models | `Django` `TensorFlow` | 🟢 Live |
-| **Plant Disease Classifier** | Vision Transformer crop diagnosis, 99.13% accuracy | `PyTorch` `Gradio` | 🟢 Live |
-| **Real Estate Advisor** | XGBoost 5-year property value forecasting | `XGBoost` `Streamlit` | 🟢 Live |
-
-</div>
-
----
-
 ## 🚀 Quick Start
 
 ```bash
